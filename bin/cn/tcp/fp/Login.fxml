@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="410.0" prefWidth="788.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cn.tcp.fp.Client">
+   <children>
+      <ImageView fitHeight="422.0" fitWidth="795.0" layoutX="-2.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@login.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="_signin" focusTraversable="false" layoutX="519.0" layoutY="318.0" mnemonicParsing="false" onAction="#onSignInPressed" prefHeight="34.0" prefWidth="118.0" text="Sign in" textFill="#090000">
+         <font>
+            <Font name="Agency FB" size="20.0" />
+         </font>
+      </Button>
+      <Button fx:id="_register" focusTraversable="false" layoutX="519.0" layoutY="265.0" mnemonicParsing="false" onAction="#onRegisterPressed" prefHeight="34.0" prefWidth="118.0" text="Register">
+         <font>
+            <Font name="Agency FB" size="20.0" />
+         </font>
+      </Button>
+      <TextField fx:id="_username" layoutX="580.0" layoutY="143.0" prefHeight="23.0" prefWidth="129.0" />
+      <Label layoutX="459.0" layoutY="145.0" prefHeight="19.0" prefWidth="78.0" text="Username">
+         <font>
+            <Font name="SimSun" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="459.0" layoutY="186.0" prefHeight="15.0" prefWidth="72.0" text="Password">
+         <font>
+            <Font name="SimSun" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="_notice4" layoutX="522.0" layoutY="230.0" text="Registration success." textFill="#ea0000" visible="false" />
+      <Label layoutX="531.0" layoutY="40.0" prefHeight="55.0" prefWidth="148.0" text="LOGIN">
+         <font>
+            <Font name="Agency FB Bold" size="64.0" />
+         </font>
+      </Label>
+      <Label fx:id="_notice1" layoutX="484.0" layoutY="230.0" text="This account is already registered." textFill="#ea0000" visible="false" />
+      <Label fx:id="_notice2" layoutX="501.0" layoutY="230.0" text=" This account does not exist." textFill="#ea0000" visible="false" />
+      <Label fx:id="_notice3" layoutX="518.0" layoutY="230.0" text="Password is incorrect." textFill="#ea0000" visible="false" />
+      <PasswordField fx:id="_password" layoutX="580.0" layoutY="184.0" prefHeight="23.0" prefWidth="130.0" />
+   </children>
+</AnchorPane>

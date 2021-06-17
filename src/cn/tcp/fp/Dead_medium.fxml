@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="660.0" prefWidth="1169.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cn.tcp.fp.Dead">
+   <children>
+      <ImageView fitHeight="892.0" fitWidth="1177.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@deadbg.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="398.0" fitWidth="476.0" layoutX="346.0" layoutY="173.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@dead.png" />
+         </image>
+      </ImageView>
+      <Button focusTraversable="false" layoutX="522.0" layoutY="402.0" mnemonicParsing="false" onAction="#onExitPressed" prefHeight="59.0" prefWidth="126.0" text="EXIT" textFill="#ff0101">
+         <font>
+            <Font name="Segoe Print Bold" size="28.0" />
+         </font>
+      </Button>
+      <Label fx:id="_levelup" focusTraversable="false" layoutX="251.0" layoutY="519.0" prefHeight="91.0" prefWidth="492.0" text="But you got a chance to level up!!" textFill="#14f3ff" visible="false">
+         <font>
+            <Font name="Segoe Script Bold" size="24.0" />
+         </font>
+      </Label>
+      <Button fx:id="_tolevelup" focusTraversable="false" layoutX="717.0" layoutY="540.0" mnemonicParsing="false" onAction="#onGoToLevelUpPressed" prefHeight="39.0" prefWidth="241.0" text="Go to &quot;Level up&quot;" textFill="#1467ff" visible="false">
+         <font>
+            <Font name="Segoe Print Bold" size="20.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
