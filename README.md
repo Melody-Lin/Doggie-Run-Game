@@ -1,4 +1,4 @@
-# Socket-Programming
+# Doggie Run Game
 ### Summary  
 • Project in the course of "Computer Network"    
 • Programming language: Java  
